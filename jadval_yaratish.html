@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jadval qo'shish</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+	<footer>
+		<h1>Item Listen 123</h1>
+		<input type="text" placeholder="Search..." class="search" >
+
+		<div class="kerak">
+			<input type="submit" value="Sing Up" class="Sing_Up">
+		    <input type="submit" value="Sing In" class="Sing_In">
+		</div>
+		
+
+	</footer>
+	<main> 
+       <div class="darslik">
+       	<img src="yapan.png">
+       	 <h2> Javascript</h2> 
+       	 <p>Lorem ipsum dolor sit amet, consectetur laborum.</p>
+       	  <input type="submit" value="Sing Up" class="Sing_Up">
+      	</div>
+
+        <div class="darslik">
+        	<img src="japan.png">
+        	 <h2> Python</h2>
+        	  <p>Lorem ipsum dolor sit amet, consectetur laborum.</p>
+        	   <input type="submit" value="Sing Up" class="Sing_Up">
+        </div>
+
+         <div class="darslik">
+         	<img src="7.jpeg">
+         	 <h2> C++</h2>
+         	  <p>Lorem ipsum dolor sit amet,   consectetur laborum.</p>
+         	   <input type="submit" value="Sing Up" class="Sing_Up">
+        </div>
+  
+       
+	</main>
+
+	<header>
+		<p>2021 Isroil Toshpo'latov tomonidan yaratilgan web site</p>
+	</header>
+   </div>
+ <div class="form">
+ 	      <form class="form_01">
+ 			<input type="text" placeholder="Ism" >
+          	<input type="text" placeholder="Familiya">
+          	<input type="email" placeholder="Email" >
+          	<input type="password" placeholder="Password" >
+          	<p class="ish_bajar">Hamma shartni bajaring</p>
+          	<button class="btn_1">Ro'yhatdan o'tish</button>
+
+        </form>
+ </div>
+       	<div class="btn_2">
+       		<p>Ro'yhatdan o'tish yaxshi yakunlandi</p>
+             <button class="Btn_3">Yopish</button>
+       	</div>
+       	<div class="darslar_k">
+       		<input type="email" name="" placeholder="Email" class="email">
+       		<input type="password" name="" placeholder="Password" class="password">
+            <a href="Sing_In.html">Kirish</a>
+       	</div>
+	<script >
+		let Sing_Up = document.querySelector('.Sing_Up');
+		let Sing_In = document.querySelector('.Sing_In');
+		let container = document.querySelector('.container')
+        let form = document.querySelector('.form')
+        let btn_2 = document.querySelector('.btn_2')
+        let btn_1 = document.querySelector('.btn_1')
+        let Btn_3 = document.querySelector('.Btn_3')
+        let darslar_k = document.querySelector('.darslar_k')
+        let email = document.querySelector('.email')
+        let password = document.querySelector('.password')
+
+
+
+
+   // Ro'yhatdan o'tganlar fuksiyasi//
+
+		Sing_Up.addEventListener('click',go);
+
+		function go(a){
+			a.preventDefault();
+        
+		    container.style.cssText ="display:none;";
+		    form.style.cssText ="display:flex;";
+        
+		}
+		// Email olish uchun form//
+
+		 btn_1.addEventListener('click',gov);
+         function gov(a){
+			a.preventDefault();    
+		 
+		    form.style.cssText ="display:none;";
+		    	btn_2.style.cssText ="display:flex;";
+            	container.style.cssText ="display:fex;"
+            
+		}
+		//Yopish button fuksiyasi//
+		Btn_3.addEventListener('click',gove);
+
+		function gove(a){
+			a.preventDefault();
+
+		     btn_2.style.cssText ="display:none;";
+
+		   
+
+		}
+       //Kirish uchun fuksiya ya'ni o'z akauntiga//
+		Sing_In.addEventListener('click',kirish);
+
+		function kirish(a){
+			a.preventDefault();
+           darslar_k.style.display = "flex"
+		}
+	</script>
+	  
+</body>
+</html>
